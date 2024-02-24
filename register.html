@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Himanshu">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  we will load the namespace in which we have stored the class as property !-->
+    <script src = "./js/namespace.js"></script>
+    <!--    Although we have stored the class as key-value pair inside the NameSpace called assignment_one
+    but,we still have to load the class file so that namespace property can refer this !
+    Otherwise, best of luck for ERROR -->
+    <script src = "./js/User.js"></script>
+
+</head>
+<body>
+<header>
+    <!-- Dynamically adding the navbar using the JS-->
+</header>
+<!-- Main Content -->
+<main class="container" id="mainContent">
+    <br>
+    <br>
+    <div class="container w-75" style="border: 1px solid black; background-color:  #f2f2f2; border-radius: 15px; padding: 2vh 5vh 2vh 10vh; width: 450px ">
+        <h1><b><i>Register</i></b></h1>
+        <hr>
+        <br>
+        <!--            This container for displaying the error messages !-->
+        <div id="messageArea"></div>
+        <!--    Some JavaScript Code here-->
+        <form  method="post" id="ContactForm">
+            <div class="form-group col-md-11">
+                <label for="firstName"><i><b>First Name</b></i></label>
+                <input type="text"  name="firstName" class="form-control" id="firstName" placeholder="Enter you First Name here:" required>
+            </div>
+            <div class="form-group col-md-11">
+                <label for="lastName"><i><b>Last Name</b></i></label>
+                <input type="text"  name="lastName" class="form-control" id="lastName" placeholder="Enter you Last Name here:" required>
+            </div>
+            <div class="form-group col-md-11">
+                <label for="email"><i><b>Email</b></i></label>
+                <input type="email"  name="email" class="form-control" id="email" placeholder="Enter your Email here:" required>
+            </div>
+            <div class="form-group col-md-11">
+                <label for="phone"><i><b>Phone</b></i></label>
+                <input type="text"  name="phone" class="form-control" id="phone" placeholder="Enter your Phone here:" required>
+            </div>
+            <div class="form-group col-md-11">
+                <label for="password"><i><b>Password</b></i></label>
+                <input type="password"  name="password" class="form-control" id="password" placeholder="Enter your Password here:" required>
+            </div>
+            <div class="form-group col-md-11">
+                <label for="address"><i><b>Address</b></i></label>
+                <textarea class="form-control" name="address" id="address" placeholder="1234 Main St" required></textarea>
+            </div>
+            <div class="form-group col-md-11">
+                <label for="city"><i><b>City: </b></i></label>
+                <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+            <div class="form-group col-md-11">
+                <label for="zip"><i><b>Zip</b></i></label>
+                <input type="text" class="form-control" id="zip"  required>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary" style="width:auto;" id="registerButton" data-toggle="modal" data-target="#exampleModalCenter">Regsiter for Harmony Hub</button>
+            &nbsp;&nbsp;&nbsp;
+            <button type="reset" class="btn btn-warning" style="width: 90px;">Cancel</button>
+
+        </form>
+    </div>
+
+
+
+</main>
+
+<!--A Small Modal for Showing the welcome message ! -->
+<div class="modal fade bd-example-modal-sm" id="registerModal" tabindex="-1" role="dialog"
+     aria-labelledby="mySmallModalLabel" aria-hidden="true" style="background-color: transparent">
+    <div class="modal-dialog modal-sm" style="
+      background-color: white;
+      border-radius: 5px;
+      padding: 0px 3px;
+      ">
+        <div class="modal-content-welcome" style="width: 296px;">
+            <h3 id="modalHeading">Welcome to Harmony Hub</h3>
+            <h3 id="modalContent"><b>Nameeeee</b></h3>
+            <br>
+            <br>
+            <h6>Redirecting to Login Page.......
+            Please use your registered email.</h6>
+        </div>
+    </div>
+
+
+
+
+
+<!-- Scripting Section -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>
+
+

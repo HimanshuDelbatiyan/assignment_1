@@ -1,0 +1,73 @@
+<!--
+Name: Himanshu
+Student ID: 100898751
+File Name:  blogPage.html
+Folder Name: Assignment-1
+Date Created: 24-01-24
+Description: This page shows the articles etc. related to  harmony hub
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Himanshu">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!--    Added the Nav Bar !-->
+<header>
+    <!--   Adding the Nav Bar using the AJAX-->
+</header>
+<div class="container">
+    <br>
+    <div class="container m-2 p-3 text-center" style="background-color: #f2f2f2; border-radius: 10px">
+        <h2><b>Community Center Event Gallery</b></h2>
+    </div>
+    <br>
+    <br>
+    <section class="photo-gallery">
+        <div class="container">
+            <div id="rowDiv" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                <div class="col">
+                    <a class="gallery-item" href="./images/eventGallery_1.jpg" style="color: blue">
+                        <img src="./images/eventGallery_1.jpg" class="img-fluid" alt="Event at Whitby">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade lightbox-modal" id="lightbox-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="lightbox-content">
+                        <!-- JS content here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Scripting Section -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--Own Js File -->
+<script src="./js/main.js"></script>
+<script src="./js/gallery.js"></script>
+
+</body>
+</html>
+
